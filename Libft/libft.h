@@ -1,7 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/17 15:28:02 by moaregra          #+#    #+#             */
+/*   Updated: 2023/11/17 15:28:18 by moaregra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+
 int		ft_atoi(const char *str);
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
