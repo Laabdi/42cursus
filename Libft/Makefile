@@ -1,6 +1,7 @@
-cc = gcc
+cc = cc
 cFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
+AR = ar rs
 SRCS = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isascii.c \
@@ -36,11 +37,11 @@ SRCS = ft_isalpha.c \
 		ft_putnbr_fd.c 
 OBJS = $(SRCS:.c=.o)
 $(NAME):	$(OBJS)
-	$(AR) rcs $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)
-	
+
 fclean:	clean
 	rm -f $(NAME)
 
