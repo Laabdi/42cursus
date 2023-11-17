@@ -6,13 +6,13 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:15:03 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 18:18:22 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:47:03 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;

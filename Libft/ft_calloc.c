@@ -6,13 +6,13 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 16:47:58 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 16:54:35 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:46:45 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t num_elements, size_t element_size)
+void	*ft_calloc(size_t num_elements, size_t element_size)
 {
 	size_t	total_size;
 	void	*ptr;

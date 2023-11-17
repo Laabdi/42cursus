@@ -6,13 +6,13 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:20:21 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 18:23:51 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:47:06 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
 	const unsigned char	*s;

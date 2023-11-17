@@ -6,13 +6,13 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:23:56 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 18:26:24 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:47:09 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*p;
 	unsigned char	value;

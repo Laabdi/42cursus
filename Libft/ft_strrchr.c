@@ -6,13 +6,13 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 15:16:45 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/17 15:18:27 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:47:30 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *str, int character)
+char	*ft_strrchr(const char *str, int character)
 {
 	size_t	slen;
 

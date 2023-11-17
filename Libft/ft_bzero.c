@@ -6,13 +6,13 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 16:28:38 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 16:46:46 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:46:41 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
 	size_t			i;
