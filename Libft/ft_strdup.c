@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:43:09 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 18:46:10 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 22:14:28 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ char	*ft_strdup(const char *s)
 	dup = (char *)malloc(sizeof(char) * slen + 1);
 	if (!dup)
 		return (NULL);
-	ft_strcpy(s, dup);
+	ft_strcpy((char *)s, dup);
 	return (dup);
 }

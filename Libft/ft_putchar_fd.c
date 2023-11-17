@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 18:53:12 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/14 18:27:01 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/17 22:16:21 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	wirte(fd, &c, 1);
+	write(fd, &c, 1);
 }
