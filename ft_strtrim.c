@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 15:18:33 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/17 22:13:11 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/22 04:28:37 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s2)
 		return (NULL);
 	ft_memcpy(s2, s1 + start, len);
-	s2[len] = '\0'; 
+	s2[len] = '\0';
 	return (s2);
 }

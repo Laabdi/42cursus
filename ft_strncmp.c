@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 15:12:29 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/17 15:14:12 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/22 04:23:38 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	size_t	i;
-	char *s1;
-	char *s2;
-	
+	char	*s1;
+	char	*s2;
+
 	s1 = (char *)str1;
-	s2  = (char *)str2;
+	s2 = (char *)str2;
 	i = 0;
 	if (n == 0)
 		return (0);

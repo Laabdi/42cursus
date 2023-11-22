@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:20:21 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/17 21:56:08 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/22 04:29:45 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
-	unsigned char	*s;
+	unsigned char		*s;
 
 	d = (unsigned char *)dest;
-	s = ( unsigned char *)src;
+	s = (unsigned char *)src;
 	if (d > s && d < s + n)
 	{
 		while (n--)

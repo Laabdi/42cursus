@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 15:21:25 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/17 15:23:37 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/22 04:27:43 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,20 +38,20 @@ static	size_t	mlenf(size_t slen, unsigned int start, size_t len)
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
-	size_t slen;
-	size_t size;
+	size_t	slen;
+	size_t	size;
 
 	slen = ft_strlen(s);
 	size = mlenf(slen, start, len);
-	if(start >= slen)
+	if (start >= slen)
 	{
 		return (ft_strdup(""));
 	}
-		if (!s)
-			return (NULL);
+	if (!s)
+		return (NULL);
 	sub = (char *)malloc(sizeof(char) * (size + 1));
 	if (!sub)
-		return (NULL);	
+		return (NULL);
 	ft_strcpy((char *)(s + start), sub);
 	sub[len] = '\0';
 	return (sub);

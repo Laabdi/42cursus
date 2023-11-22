@@ -6,31 +6,27 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:32:49 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/22 00:39:14 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/22 04:04:58 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_words(char *s1, char b)
+static int count_words(char *s,char c)
 {
-	size_t	count;
-	size_t	i;
-
-	i = 0;
-	count = 0;
-	if (!s1)
-		return (0);
-	while (s1[i])
-	{
-		while (s1[i] == b)
-		i++;
-		if (s1[i] != b)
-			count++;
-		while (s1[i] && s1[i] != b)
-			i++;
-	}
-	return (count);
+    int i = 0;
+	int count = 0;
+    while(s[i])
+    {
+        while(s[i] == c)
+        i++;
+        if (s[i] == '\0')
+            break;
+        while(s[i] != c && s[i])
+        i++;
+        count++;
+    }
+    return(count);
 }
 
 static char	*malloc_strings(const char *s, char c)
@@ -89,7 +85,7 @@ char	**ft_split(char const *s, char c)
 			s++;
 		}
 	}
-	src[i] = '\0';
+	src[i] = NULL;
 	return (src);
 }
 

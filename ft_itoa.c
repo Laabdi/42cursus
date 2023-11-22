@@ -6,7 +6,7 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:59:49 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/17 18:44:33 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/22 04:25:49 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 		nb = -nb;
 		len++;
 	}
-	result = (char *)ft_calloc(sizeof(char),(len + 1));
+	result = (char *)ft_calloc(sizeof(char), (len + 1));
 	if (!result)
 		return (NULL);
 	while (len--)

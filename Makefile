@@ -1,5 +1,5 @@
-cc = cc
-cFLAGS = -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 AR = ar rs
 SRCS = ft_isalpha.c \
