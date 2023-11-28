@@ -6,27 +6,30 @@
 /*   By: moaregra <moaregra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:32:49 by moaregra          #+#    #+#             */
-/*   Updated: 2023/11/22 04:04:58 by moaregra         ###   ########.fr       */
+/*   Updated: 2023/11/28 18:50:22 by moaregra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int count_words(char *s,char c)
+static int	count_words(char *s, char c)
 {
-    int i = 0;
-	int count = 0;
-    while(s[i])
-    {
-        while(s[i] == c)
-        i++;
-        if (s[i] == '\0')
-            break;
-        while(s[i] != c && s[i])
-        i++;
-        count++;
-    }
-    return(count);
+	int	i;
+	int	count;
+
+	count = 0;
+	i = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+		i++;
+		if (s[i] == '\0')
+			break ;
+		while (s[i] != c && s[i])
+		i++;
+		count++;
+	}
+	return (count);
 }
 
 static char	*malloc_strings(const char *s, char c)
@@ -49,22 +52,23 @@ static char	*malloc_strings(const char *s, char c)
 	word[i] = '\0';
 	return (word);
 }
-static void	free_string(char **s, size_t i)
+
+static int	free_string(char **s, size_t i)
 {
 	while (i--)
 		free(s[i]);
 	free(s);
+	return (1);
 }
+
 char	**ft_split(char const *s, char c)
 {
-	size_t		len;
 	size_t		i;
 	char		**src;
 
 	if (!s)
 		return (NULL);
-	len = count_words((char *)s, c);
-	src = (char **)malloc(sizeof(char *) * (len + 1));
+	src = (char **)ft_calloc((count_words((char *)s, c) + 1), sizeof(char *));
 	if (!src)
 		return (NULL);
 	i = 0;
@@ -75,17 +79,12 @@ char	**ft_split(char const *s, char c)
 		if (*s && *s != c)
 		{
 			src[i] = malloc_strings(s, c);
-			if(!src[i])
-			{
-				free_string(src,i);
+			if (!src[i] && free_string(src, i))
 				return (NULL);
-			}
 			i++;
 			while (*s && *s != c)
 			s++;
 		}
 	}
-	src[i] = NULL;
 	return (src);
 }
-
